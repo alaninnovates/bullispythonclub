@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>BCS Python Competiton Club</title>
+	<link href="/static/style.css" rel="stylesheet" type="text/css" /> {% block head %}{% endblock %}
+</head>
+
+<body>
+	<!-- todo: navbar -->
+	<div class="nav">
+		
+	</div>
+	{% block content %}{% endblock %}
+	<script>
+		if (window.location.href.substring(0, 7) === "http://") {
+			window.location.href = window.location.href.replace("http://", "https://")
+		}
+	</script>
+	<!-- such as imports of script files -->
+	{% block scripts %}{% endblock %}
+</body>
+
+</html>

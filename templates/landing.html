@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/landing.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content%}
+<div class="main">
+	<div class="hero">
+		<div class="hero-content">
+			<h1 class="hero-content__head">
+				<span>
+					BCS Python
+				</span>
+				<span class="hero-content__underlined">
+					competition club
+				</span>
+			</h1>
+			<h4 class="hero-content__body">
+				The Bullis Python competition club is a club that... does something?
+			</h4>
+			<div class="hero-content__buttons">
+				<button class="btn btn-blue hero-btn">
+					Join us!
+				</button>
+			</div>
+		</div>
+		<div class="hero-image">
+			<img src="https://dailyillini.com/wp-content/uploads/2019/08/A3_CSComp-900x600.jpg" alt="">
+		</div>
+	</div>
+	<div class="reason-wrapper">
+		<h1 class="heading">
+			Why join us?
+		</h1>
+		<div class="reason">
+			<div class="reason__img m-right">
+				<img src="https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923_960_720.png" alt="Computer with python code">
+			</div>
+			<div class="reason__text">
+				<h3>Learn to code fluently in python</h3>
+				<p>We will review slides everyday, covering python concepts. We might give exercises for homework from time to time. We will use the concepts we’ve learned to code minor projects and compete in competitions against each other.
+</p>
+			</div>
+		</div>
+		<div class="reason">
+			<div class="reason__text m-right">
+				<h3>Coding competitions</h3>
+				<p>Students will be competing between themselves throughout the year. There is a possible chance to do an actual competition.
+</p>
+			</div>
+			<div class="reason__img">
+				<img src="https://images.squarespace-cdn.com/content/v1/50cca155e4b0c301a8212ad4/1505773954641-7K7GP2HNZPXE1E4YMPHS/-1.jpg?format=1000w" alt="competition images">
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
