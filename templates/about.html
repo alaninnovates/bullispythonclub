@@ -4,18 +4,34 @@
 <link rel="stylesheet" href="/static/about.css"> 
 {% endblock %}
 
-{% block header %}
-<h1>About</h1>
-{% endblock %}
-
 {% block content %}
-<div>
-	<h3>About the club</h3>
-	<p></p>
-</div>
-
-<div>
-	<h3>About us</h3>
-	<p></p>
+<div class="container">
+	<h1 class="heading title">About us</h1>
+	<div>
+		<h3 class="subheading">About the club</h3>
+		<p class="club-desc">The BCS Python club is a club led by Dhruvi and Alan, 2 experts in multiple programming languages including python.</p>
+	</div>
+	
+	<div class="about-container">
+		<h3 class="subheading">About us</h3>
+		<div class="person">
+			<div class="person-img-container">
+				<img class="person-img" src="/static/alan.jpg" alt="">
+			</div>
+			<div class="person-text">
+				<h4 class="person-name">Alan</h4>
+				<p class="person-description">Alan is a programmer that has 2 years of experience in JS/TS and python. He is always intrested in developing new skills and learning new things. He likes to play piano, do robotics, and help others in his spare time.</p>
+			</div>
+		</div>
+		<div class="person">
+			<div class="person-img-container">
+				<img class="person-img" src="/static/dhruvi.jpg" alt="">
+			</div>
+			<div class="person-text">
+				<h4 class="person-name">Dhruvi</h4>
+				<p class="person-description">I have been coding for 2 years and I know a bit of HTML, CSS and JavaScript, but the main language I code in is Python. I also love playing piano, tennis, robotics, and reading.</p>
+			</div>
+		</div>
+	</div>
 </div>
 {% endblock %}

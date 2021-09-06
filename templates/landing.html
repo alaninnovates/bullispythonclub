@@ -2,14 +2,10 @@
 
 {% block head %}
 <link rel="stylesheet" href="/static/landing.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content%}
-<div class="main">
+<div class="container">
 	<div class="hero">
 		<div class="hero-content">
 			<h1 class="hero-content__head">
@@ -17,20 +13,23 @@
 					BCS Python
 				</span>
 				<span class="hero-content__underlined">
-					competition club
+					competition
+				</span>
+				<span class="hero-content__underlined">
+					club
 				</span>
 			</h1>
 			<h4 class="hero-content__body">
-				The Bullis Python competition club is a club that... does something?
+				The Bullis Python competition club is a club that teaches you python.
 			</h4>
 			<div class="hero-content__buttons">
-				<button class="btn btn-blue hero-btn">
-					Join us!
+				<button class="btn btn-blue hero-btn" onclick="window.location.href='/about'">
+					About
 				</button>
 			</div>
 		</div>
 		<div class="hero-image">
-			<img src="https://dailyillini.com/wp-content/uploads/2019/08/A3_CSComp-900x600.jpg" alt="">
+			<img  src="https://dailyillini.com/wp-content/uploads/2019/08/A3_CSComp-900x600.jpg" alt="">
 		</div>
 	</div>
 	<div class="reason-wrapper">
@@ -43,20 +42,63 @@
 			</div>
 			<div class="reason__text">
 				<h3>Learn to code fluently in python</h3>
-				<p>We will review slides everyday, covering python concepts. We might give exercises for homework from time to time. We will use the concepts we’ve learned to code minor projects and compete in competitions against each other.
-</p>
+				<p>
+					We will review slides everyday, covering python concepts. We might give exercises for homework from time to time. We will use the concepts we’ve learned to code minor projects and compete in competitions against each other.
+				</p>
 			</div>
 		</div>
 		<div class="reason">
 			<div class="reason__text m-right">
 				<h3>Coding competitions</h3>
-				<p>Students will be competing between themselves throughout the year. There is a possible chance to do an actual competition.
-</p>
+				<p>
+					Students will be competing between themselves throughout the year. There is a possible chance to do an actual	competition.
+				</p>
 			</div>
 			<div class="reason__img">
 				<img src="https://images.squarespace-cdn.com/content/v1/50cca155e4b0c301a8212ad4/1505773954641-7K7GP2HNZPXE1E4YMPHS/-1.jpg?format=1000w" alt="competition images">
 			</div>
 		</div>
+	</div>
+	<div class="learn">
+		<h1 class="heading learn-header">
+			What will we do?
+		</h1>
+		<div class="learn-container">
+		
+				<div class="learn-item">
+					<img src="/static/check.svg" alt="" class="check-img">
+					<div>
+						<p class="learn-item__head">Learn Python</p>
+						<p>Python, the programming language. Not the snake!</p>
+					</div>
+				</div>
+				<div class="learn-item">
+					<img src="/static/check.svg" alt="" class="check-img">
+					<div>
+						<p class="learn-item__head">Learn Simple Algorithms</p>
+						<p>Basic algorithms to help you solve problems</p>
+					</div>
+				</div>
+			
+				<div class="learn-item">
+					<img src="/static/check.svg" alt="" class="check-img">
+					<div>
+						<p class="learn-item__head">Compete!</p>
+						<p>Practice your skills in competitions against your classmates!</p>
+					</div>
+				</div>
+			</div>
+	
+	</div>
+	<div class="join-us">
+		<h1 class="heading join-heading">
+			Join us!
+		</h1>
+		<p>Join the Python Competition coding club for a year of learning and fun!</p>
+		<video class="trailer-vid" controls>
+			<source src="/static/trailer.mp4" type="video/mp4">
+			Your browser does not support videos.
+		</video>
 	</div>
 </div>
 {% endblock %}
