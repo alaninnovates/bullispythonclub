@@ -4,8 +4,9 @@
 }
 
 .hero {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* flex-direction: column; */
 	min-height: 100vh;
 	width: 100vw;
 }
@@ -150,7 +151,10 @@
 	text-align: center;
 }
 
-.trailer-vid {}
+.trailer-vid {
+	width: 40vw;
+	height: 30vh;
+}
 
 .m-left {
 	margin-left: 5;
@@ -193,10 +197,6 @@
 	.learn-container {
 		grid-template-columns: none;
 		grid-template-rows: repeat(3, 1fr);
-	}
-	.trailer-vid {
-		width: 320px;
-		height: 240px;
 	}
 }
 
